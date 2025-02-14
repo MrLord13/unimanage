@@ -1,0 +1,46 @@
+<odoo>
+    <record id="unimanage_student_form" model="ir.ui.view">
+        <field name="name">unimanage.student.form</field>
+        <field name="model">unimanage.student</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="student_picture" widget="image" class="oe_avatar float_left"
+                                       options="{'size': [130, 175]}"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group>
+                            <field name="student_code"/>
+                            <field name="student_number"/>
+                        </group>
+                        <field name="student_description"/>
+                        <field name="class_ids" widget="many2many_tags"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="unimanage_student_tree" model="ir.ui.view">
+        <field name="name">unimanage.student.tree</field>
+        <field name="model">unimanage.student</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="student_picture" widget="image" options="{'size': [50, 50]}" class="oe_avatar hover bx-zoom-in"/>
+                <field name="name"/>
+                <field name="student_code"/>
+                <field name="student_number"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="unimanage_student_action" model="ir.actions.act_window">
+        <field name="name">دانشجو</field>
+        <field name="res_model">unimanage.student</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

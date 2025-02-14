@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_unimanage_class,دسترسی کامل به مدل کلاس,model_unimanage_class,,1,1,1,1
+access_unimanage_session,دسترسی کامل به مدل جلسات,model_unimanage_session,,1,1,1,1
+access_unimanage_student,دسترسی کامل به مدل دانشجو,model_unimanage_student,,1,1,1,1
+access_unimanage_assignment,دسترسی کامل به مدل تکالیف,model_unimanage_assignment,,1,1,1,1
+access_unimanage_grade,دسترسی کامل به مدل نمره,model_unimanage_grade,,1,1,1,1
