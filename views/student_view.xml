@@ -8,15 +8,30 @@
                     <group>
                         <group>
                             <field name="name"/>
+                        </group>
+                        <group>
                             <field name="student_picture" widget="image" class="oe_avatar float_left"
-                                       options="{'size': [130, 175]}"/>
+                                   options="{'size': [130, 175]}"/>
                         </group>
                     </group>
                     <group>
                         <group>
                             <field name="student_code"/>
+                        </group>
+                        <group>
                             <field name="student_number"/>
                         </group>
+                    </group>
+                    <group>
+                        <group>
+                            <field name="student_grade"/>
+                            <field name="student_field"/>
+                        </group>
+                        <group>
+                            <field name="student_code_meli"/>
+                        </group>
+                    </group>
+                    <group>
                         <field name="student_description"/>
                         <field name="class_ids" widget="many2many_tags"/>
                     </group>
@@ -30,7 +45,8 @@
         <field name="model">unimanage.student</field>
         <field name="arch" type="xml">
             <tree>
-                <field name="student_picture" widget="image" options="{'size': [50, 50]}" class="oe_avatar hover bx-zoom-in"/>
+                <field name="student_picture" widget="image" options="{'size': [50, 50]}"
+                       class="oe_avatar hover bx-zoom-in"/>
                 <field name="name"/>
                 <field name="student_code"/>
                 <field name="student_number"/>
