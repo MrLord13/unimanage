@@ -48,7 +48,10 @@
                 <field name="student_picture" widget="image" options="{'size': [50, 50]}"
                        class="oe_avatar hover bx-zoom-in"/>
                 <field name="name"/>
+                <field name="student_code_meli"/>
                 <field name="student_code"/>
+                <field name="student_grade"/>
+                <field name="student_field"/>
                 <field name="student_number"/>
             </tree>
         </field>
