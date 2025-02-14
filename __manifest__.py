@@ -14,6 +14,7 @@
         'views/student_view.xml',
         'views/assignment_view.xml',
         'views/grade_view.xml',
+        'views/menu.xml',
     ],
     'sequence': -200,
     'application': True,

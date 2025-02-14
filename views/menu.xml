@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <menuitem id="unimanage_menu_root"
+              name="مدیریت دانشگاه"
+              web_icon="unimanage,static/description/icon.png"
+              sequence="0"/>
+    <menuitem id="unimanage_class_menu"
+              name="کلاس ها"
+              parent="unimanage_menu_root"
+              action="unimanage_class_action"
+              sequence="199"/>
+    <menuitem id="unimanage_session_menu"
+              name="جلسات"
+              parent="unimanage_menu_root"
+              action="unimanage_session_action"
+              sequence="200"/>
+     <menuitem id="unimanage_student_menu"
+              name="دانشجویان"
+              parent="unimanage_menu_root"
+              action="unimanage_student_action"
+              sequence="201"/>
+     <menuitem id="unimanage_assignment_menu"
+              name="تکالیف"
+              parent="unimanage_menu_root"
+              action="unimanage_assignment_action"
+              sequence="202"/>
+     <menuitem id="unimanage_grade_menu"
+              name="نمره"
+              parent="unimanage_menu_root"
+              action="unimanage_grade_action"
+              sequence="203"/>
+
+</odoo>
